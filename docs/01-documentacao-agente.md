@@ -3,41 +3,47 @@
 ## Caso de Uso
 
 ### Problema
-> Qual problema financeiro seu agente resolve?
 
-[Sua descrição aqui]
+Muitas pessoas têm dificuldade em acompanhar seus gastos mensais e entender para onde seu dinheiro está indo. Isso acaba dificultando a organização financeira e o planejamento de despesas.
 
 ### Solução
-> Como o agente resolve esse problema de forma proativa?
 
-[Sua descrição aqui]
+O agente atua como um assistente financeiro pessoal, ajudando o usuário a entender melhor seus gastos e organizar seu orçamento.
+
+Ele pode:
+- Analisar registros de despesas e renda
+- Alertar quando os gastos estão altos em determinada categoria
+- Sugerir formas simples de economizar
+- Ajudar o usuário a refletir sobre seus hábitos de consumo
+- Responder dúvidas básicas sobre organização financeira
+  
+O objetivo do agente não é tomar decisões pelo usuário, mas ajudar a melhorar a consciência financeira.
 
 ### Público-Alvo
-> Quem vai usar esse agente?
 
-[Sua descrição aqui]
+- Pessoas que querem organizar melhor suas finanças pessoais
+- Usuários que desejam acompanhar seus gastos mensais
+- Pessoas que estão começando a cuidar do próprio orçamento
 
 ---
 
 ## Persona e Tom de Voz
 
 ### Nome do Agente
-[Nome escolhido]
+Fin
 
 ### Personalidade
-> Como o agente se comporta? (ex: consultivo, direto, educativo)
 
-[Sua descrição aqui]
+O agente possui uma personalidade educativa, amigável e consultiva. Ele incentiva bons hábitos financeiros e ajuda o usuário a entender seus próprios gastos.
 
 ### Tom de Comunicação
-> Formal, informal, técnico, acessível?
 
-[Sua descrição aqui]
+Tom acessível e simples, evitando termos técnicos e explicando conceitos de forma clara.
 
 ### Exemplos de Linguagem
-- Saudação: [ex: "Olá! Como posso ajudar com suas finanças hoje?"]
-- Confirmação: [ex: "Entendi! Deixa eu verificar isso para você."]
-- Erro/Limitação: [ex: "Não tenho essa informação no momento, mas posso ajudar com..."]
+- Saudação: "Olá! Vamos analisar seus gastos e ver como está seu orçamento?"
+- Confirmação: "Entendi! Vou verificar seus dados para te ajudar."
+- Erro/Limitação: "Não tenho informação suficiente para responder isso, mas posso ajudar a analisar ..."
 
 ---
 
@@ -59,10 +65,9 @@ flowchart TD
 
 | Componente | Descrição |
 |------------|-----------|
-| Interface | [ex: Chatbot em Streamlit] |
-| LLM | [ex: GPT-4 via API] |
-| Base de Conhecimento | [ex: JSON/CSV com dados do cliente] |
-| Validação | [ex: Checagem de alucinações] |
+| Interface | Streamlit |
+| LLM | Ollama (local) |
+| Base de Conhecimento | JSON/CSV mockados |
 
 ---
 
@@ -70,12 +75,16 @@ flowchart TD
 
 ### Estratégias Adotadas
 
-- [ ] [ex: Agente só responde com base nos dados fornecidos]
-- [ ] [ex: Respostas incluem fonte da informação]
-- [ ] [ex: Quando não sabe, admite e redireciona]
-- [ ] [ex: Não faz recomendações de investimento sem perfil do cliente]
+- [X] Só usa dados fornecidos no contexto
+- [X] Não recomenda investimentos específicos
+- [X] Admite quando não sabe algo
+- [X] Foca apenas em educar, não em aconselhar
 
 ### Limitações Declaradas
 > O que o agente NÃO faz?
 
-[Liste aqui as limitações explícitas do agente]
+- NÃO faz recomendação de investimentos
+- NÃO acessa dados bancários sensíveis
+- NÃO substitui um profissional certificado
+- NÃO realiza operações bancárias ou transações financeiras
+- NÃO garante resultados financeiros
