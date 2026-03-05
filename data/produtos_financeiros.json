@@ -32,6 +32,14 @@
     "indicado_para": "Perfil moderado que busca diversificação"
   },
   {
+    "nome": "Fundo Imobiliário (FII)",
+    "categoria": "fundo",
+    "risco": "medio",
+    "rentabilidade": "Dividend Yield (DY) costuma ficar entre 6% e 12% ao ano",
+    "aporte_minimo": 100.00,
+    "indicado_para": "Perfil moderado que busca diversificação e renda recorrente mensal"
+  },
+  {
     "nome": "Fundo de Ações",
     "categoria": "fundo",
     "risco": "alto",
